@@ -1,7 +1,7 @@
 # Undergraduate-Management-Project
 > 자바 언어 기반의 학사관리 프로젝트 입니다.
 
-![java](https://img.shields.io/badge/java-2019.03-orange.svg?style=flat-square&logo=java) 
+![java](https://img.shields.io/badge/java-jdk10-orange.svg?style=flat-square&logo=java) 
 
 ## What?
 
