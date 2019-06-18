@@ -1,9 +1,10 @@
 jdk:
-- oraclejdk8
+  - oraclejdk8
 # would just use default install/script but the ./mvnw script errors on travis
 # obviously this only works for maven builds right now...
-install: true
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
-- mvn install
+  - mvn test
 after_success:
   - mvn clean cobertura:cobertura coveralls:report
