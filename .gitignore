@@ -77,7 +77,7 @@ out/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
-# JIRA plugin
+# JIRA plugins
 atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
