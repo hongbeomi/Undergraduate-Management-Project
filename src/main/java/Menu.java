@@ -1,4 +1,3 @@
-package src;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -44,7 +43,6 @@ public class Menu implements ViewInterface {
                     case 4:
                         return;
                     default:
-                        continue;
                 }
             } catch (InputMismatchException e) {
                 System.out.println();

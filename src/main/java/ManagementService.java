@@ -1,4 +1,3 @@
-package src;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,12 +5,12 @@ import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 import java.util.Scanner;
 
-public class ManagementService extends Member {
+class ManagementService extends Member {
 
-    public static int indexNum;
+    static int indexNum;
 
     //TODO 로그인 시 사용자의 이름, 아이디, 비밀번호, 과목점수들을 불러오는 기능
-    public void requestLogin() {
+    private void requestLogin() {
         try {
             Properties props = new Properties();
             FileInputStream fis = new FileInputStream("/Users/hongbeom/Workspace/java_Data/project/src/client.properties");
@@ -30,7 +29,7 @@ public class ManagementService extends Member {
     }
 
     //TODO 로그인 구현
-    public void login() {
+    void login() {
         Scanner scanner = new Scanner(System.in);
         boolean ifcheck = false;
 

@@ -1,4 +1,3 @@
-package src;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -14,7 +13,7 @@ public class LectureEvaluation implements ViewInterface {
     private final String path = "/Users/hongbeom/Workspace/java_Data/project/src/lectureEvaluation.properties";
 
     //TODO 과목을 선택하는 뷰 & 기능 구현
-    public void subjectChoice() {
+    void subjectChoice() {
         while (true) {
             saveId();
             System.out.println("==================");
@@ -44,7 +43,6 @@ public class LectureEvaluation implements ViewInterface {
                     case 5:
                         return;
                     default:
-                        continue;
                 }
             }catch (InputMismatchException e) {
                 System.out.println();
@@ -55,13 +53,13 @@ public class LectureEvaluation implements ViewInterface {
     }
 
     //TODO 과목 선택에 대한 입력 기능 구현
-    public int checkerInput() {
+    private int checkerInput() {
         check = scanner.nextInt();
         return check;
     }
 
     //TODO 각 과목마다 강의 평가 점수들의 합에 대한 저장 기능 구현
-    public void saveService() {
+    private void saveService() {
         try {
             Properties props = new Properties();
             FileInputStream fis = new FileInputStream(path);
@@ -91,7 +89,7 @@ public class LectureEvaluation implements ViewInterface {
     }
 
     // TODO 과목에 대한 강의 평가 점수 및 아이디를 프로퍼티 파일에 저장하는 기능
-    public void LectureEvalautionScoreService() {
+    private void LectureEvalautionScoreService() {
         int number = scanner.nextInt();
         if (number > 0 && number <= 5) {
             sum += number;
@@ -131,7 +129,7 @@ public class LectureEvaluation implements ViewInterface {
     }
 
     //TODO 강의평가를 시작하기 전에 아이디에 대한 정보를 불러와서 저장
-    public void saveId() {
+    private void saveId() {
         try {
             Properties props = new Properties();
             FileInputStream fis = new FileInputStream(path);

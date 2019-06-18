@@ -1,6 +1,4 @@
-package src;
-
-public class Member {
+class Member {
 
     static private String id;
     static private String password;

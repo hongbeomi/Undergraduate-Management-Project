@@ -1,4 +1,3 @@
-package src;
 
 import java.util.ArrayList;
 
@@ -8,12 +7,12 @@ public class Tuition implements ViewInterface {
     private ArrayList<Double> changeScores = new ArrayList<>();
 
     //TODO 평균 학점을 구하는 기능
-    public double averegeScore() {
+    private double averegeScore() {
         double avgScore;
         double sumScore = 0;
 
-        for (int i = 0; i < changeScores.size(); i++) {
-            sumScore += (changeScores.get(i) * 3);
+        for (Double changeScore : changeScores) {
+            sumScore += (changeScore * 3);
         }
 
         avgScore = sumScore / 12;
@@ -21,7 +20,7 @@ public class Tuition implements ViewInterface {
     }
 
     //TODO 점수를 학점으로 바꾸는 기능
-    public double changeScoreService(final String subject) {
+    private double changeScoreService(final String subject) {
         double grade;
         int sub = Integer.parseInt(subject);
 
@@ -46,10 +45,8 @@ public class Tuition implements ViewInterface {
     }
 
     //TODO 장학금을 구하는 기능
-    public int calculateScholarshipService(final double avgScore) {
-        int scholarship = (int) (avgScore >= 4.0 ? TUITION : (avgScore >= 3.5 ? (TUITION * 0.5) : 0));
-
-        return scholarship;
+    private int calculateScholarshipService(final double avgScore) {
+        return (int) (avgScore >= 4.0 ? TUITION : (avgScore >= 3.5 ? (TUITION * 0.5) : 0));
     }
 
 }

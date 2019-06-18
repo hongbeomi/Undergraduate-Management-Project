@@ -1,4 +1,3 @@
-package src;
 
 public class Score implements ViewInterface {
 
@@ -17,7 +16,7 @@ public class Score implements ViewInterface {
     }
 
     //TODO 학점계산 기능
-    public String calculateScoreService (final String subject) {
+    private String calculateScoreService(final String subject) {
         String grade;
         int sub = Integer.parseInt(subject);
 
