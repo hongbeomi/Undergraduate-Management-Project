@@ -111,7 +111,7 @@ fabric.properties
 
 ### Maven ###
 target/
-pom.xml
+pom.xml.target
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
