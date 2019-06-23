@@ -1,7 +1,7 @@
 # Undergraduate-Management-Project
 > 자바 언어 기반의 학사관리 프로젝트 입니다.
 
-![GitHub top language](https://img.shields.io/github/languages/top/hongbeomi/Undergraduate-Management-Project.svg?color=orange&logo=java) ![build](https://travis-ci.org/hongbeomi/Undergraduate-Management-Project.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/hongbeomi/Undergraduate-Management-Project/badge.svg?branch=master)](https://coveralls.io/github/hongbeomi/Undergraduate-Management-Project?branch=master)
+![GitHub top language](https://img.shields.io/github/languages/top/hongbeomi/Undergraduate-Management-Project.svg?color=deepgreen&logo=java) ![build](https://travis-ci.org/hongbeomi/Undergraduate-Management-Project.svg?branch=master) [![Coverage Status](https://coveralls.io/repos/github/hongbeomi/Undergraduate-Management-Project/badge.svg?branch=master)](https://coveralls.io/github/hongbeomi/Undergraduate-Management-Project?branch=master)
 
 ## What?
 
